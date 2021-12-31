@@ -15,4 +15,12 @@ sudo update-alternatives --config gcc
 sudo update-alternatives --config g++
 ```
 
-If you have multiple versions and you want to prioritize 2 versions then check this link: https://askubuntu.com/questions/26498/how-to-choose-the-default-gcc-and-g-version
+If you have multiple versions and you want to prioritize multiple versions then check this link: https://askubuntu.com/questions/26498/how-to-choose-the-default-gcc-and-g-version
+
+To check which version you are using, try:
+```
+gcc --version
+g++ --version
+c++ --version
+```
+etc.
