@@ -24,3 +24,18 @@ g++ --version
 c++ --version
 ```
 etc.
+
+
+#Robotiq Gazebo to melodic standard
+event::Events::DisconnectWorldUpdateBegin(this->updateConnection);
+to
+this->updateConnection.reset();
+GetPhysicsEngine()->
+to
+Physics()
+GetAngle(0).Radian();
+to
+Position ( 0 )
+gazebo::math::clamp
+to
+ignition::math::clamp
