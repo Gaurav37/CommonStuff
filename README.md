@@ -26,16 +26,18 @@ c++ --version
 etc.
 
 
-#Robotiq Gazebo to melodic standard
+# Robotiq Gazebo to melodic standard
+```
 event::Events::DisconnectWorldUpdateBegin(this->updateConnection);
-to
+\\to
 this->updateConnection.reset();
 GetPhysicsEngine()->
-to
+\\to
 Physics()
 GetAngle(0).Radian();
-to
+\\to
 Position ( 0 )
 gazebo::math::clamp
-to
+\\to
 ignition::math::clamp
+```
